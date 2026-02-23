@@ -3,52 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SubTrack - Privacy Policy</title>
+    <title>SubTrack - Privacy Policy & Support</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.6; color: #333; }
-        h1 { font-size: 1.8rem; }
-        h2 { font-size: 1.3rem; margin-top: 2rem; }
-        .date { color: #666; font-size: 0.9rem; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1rem 4rem; line-height: 1.7; color: #1d1d1f; background: #fff; }
+        h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+        h2 { font-size: 1.4rem; margin-top: 2.5rem; margin-bottom: 0.5rem; color: #1d1d1f; }
+        h3 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.3rem; }
+        p, li { color: #424245; }
+        .subtitle { color: #86868b; font-size: 0.95rem; margin-bottom: 2rem; }
+        ul { padding-left: 1.5rem; margin: 0.5rem 0; }
+        li { margin: 0.3rem 0; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .divider { border: none; border-top: 1px solid #d2d2d7; margin: 3rem 0; }
+        .contact-card { background: #f5f5f7; border-radius: 12px; padding: 1.5rem; margin-top: 1rem; }
+        .contact-card p { margin: 0.3rem 0; }
+        .nav { display: flex; gap: 1.5rem; margin: 1.5rem 0; }
+        .nav a { font-weight: 500; color: #0066cc; }
     </style>
 </head>
 <body>
-    <h1>SubTrack Privacy Policy</h1>
-    <p class="date">Last updated: February 23, 2026</p>
+    <h1>SubTrack</h1>
+    <p class="subtitle">Subscription Manager for iOS, iPadOS & macOS</p>
 
-    <h2>Overview</h2>
-    <p>SubTrack ("the App") is a subscription management app developed by MatrixReligio LLC. We are committed to protecting your privacy. This policy explains how we handle your data.</p>
+    <nav class="nav">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#support">Support</a>
+    </nav>
 
-    <h2>Data Collection and Storage</h2>
-    <p>SubTrack stores all your subscription data, categories, and settings <strong>locally on your device</strong>. We do not collect, transmit, or store any personal data on external servers.</p>
+    <!-- ==================== PRIVACY POLICY ==================== -->
+    <h2 id="privacy">Privacy Policy</h2>
+    <p class="subtitle">Effective date: February 23, 2026</p>
+
+    <p>SubTrack is developed by MatrixReligio. We take your privacy seriously. This policy explains what data SubTrack collects and how it is used.</p>
+
+    <h3>Data Storage</h3>
+    <p>All your subscription data, categories, payment history, and app settings are stored <strong>locally on your device</strong> using Apple's SwiftData framework. Your data belongs to you.</p>
+
+    <h3>iCloud Sync</h3>
+    <p>If you have iCloud enabled, SubTrack uses Apple's CloudKit to sync your data across your devices. Your data is stored in your personal iCloud account and is encrypted in transit and at rest by Apple. We have no access to your iCloud data. For details, see <a href="https://www.apple.com/privacy/">Apple's Privacy Policy</a>.</p>
+
+    <h3>Data We Do NOT Collect</h3>
     <ul>
-        <li><strong>Subscription data</strong> (names, prices, dates, categories) is stored on-device using Apple's SwiftData framework.</li>
-        <li><strong>iCloud Sync</strong>: If you enable iCloud, your data is synced through Apple's iCloud infrastructure. We do not have access to your iCloud data. Please refer to <a href="https://www.apple.com/privacy/">Apple's Privacy Policy</a> for details.</li>
-        <li><strong>Monthly income reference</strong> (optional): If you provide this, it is stored locally and used only to calculate a spending health score. It is never transmitted.</li>
+        <li>We do <strong>not</strong> collect any personal information.</li>
+        <li>We do <strong>not</strong> use analytics, tracking, or advertising frameworks.</li>
+        <li>We do <strong>not</strong> collect crash reports or usage data.</li>
+        <li>We do <strong>not</strong> share any data with third parties.</li>
     </ul>
 
-    <h2>Exchange Rate Data</h2>
-    <p>The App fetches currency exchange rates from a third-party API (FloatRates) to support multi-currency conversion. Only the exchange rate data is downloaded; no personal information is sent to this service.</p>
+    <h3>Network Requests</h3>
+    <p>SubTrack makes the following network requests:</p>
+    <ul>
+        <li><strong>Currency exchange rates:</strong> The app fetches exchange rate data from FloatRates, a publicly available currency rate service. No personal data is sent in these requests.</li>
+        <li><strong>iCloud sync:</strong> Data synchronization through Apple's CloudKit infrastructure (if iCloud is enabled).</li>
+        <li><strong>In-App Purchases:</strong> Processed entirely by Apple's App Store. We do not collect or store any payment or billing information.</li>
+    </ul>
 
-    <h2>In-App Purchases</h2>
-    <p>SubTrack offers optional Pro features via in-app purchases processed by Apple's App Store. We do not collect or store any payment information. All transactions are handled by Apple. Please refer to <a href="https://www.apple.com/privacy/">Apple's Privacy Policy</a> for details.</p>
+    <h3>On-Device AI Features</h3>
+    <p>SubTrack Pro includes AI-powered spending analysis features. All analysis is performed <strong>entirely on your device</strong>. No subscription data, income information, or analysis results are ever transmitted to any server.</p>
 
-    <h2>Analytics and Tracking</h2>
-    <p>SubTrack does <strong>not</strong> use any analytics, tracking, or advertising frameworks. We do not collect usage data, crash reports, or behavioral analytics.</p>
+    <h3>Optional Monthly Income</h3>
+    <p>You may optionally provide a monthly income reference to calculate spending health scores. This value is stored locally on your device and is never transmitted anywhere.</p>
 
-    <h2>Third-Party Services</h2>
-    <p>The App does not integrate with any third-party analytics, advertising, or social media SDKs.</p>
+    <h3>Notifications</h3>
+    <p>SubTrack sends local notifications for subscription renewal reminders. These notifications are generated entirely on your device and do not involve any external servers or push notification services.</p>
 
-    <h2>Notifications</h2>
-    <p>SubTrack may send local notifications to remind you of upcoming subscription renewals. These notifications are generated entirely on your device and do not involve any external servers.</p>
+    <h3>Widgets & Siri Shortcuts</h3>
+    <p>SubTrack provides Home Screen widgets and Siri Shortcuts that display subscription data. These features access data from your device's local storage only.</p>
 
-    <h2>Children's Privacy</h2>
-    <p>SubTrack is not directed at children under 13. We do not knowingly collect data from children.</p>
+    <h3>Children's Privacy</h3>
+    <p>SubTrack is not directed at children under 13. We do not knowingly collect data from anyone, including children.</p>
 
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date.</p>
+    <h3>Changes to This Policy</h3>
+    <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page with an updated effective date.</p>
 
-    <h2>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at:<br>
-    <a href="mailto:matrixreligio@gmail.com">matrixreligio@gmail.com</a></p>
+    <hr class="divider">
+
+    <!-- ==================== SUPPORT ==================== -->
+    <h2 id="support">Support</h2>
+
+    <h3>Getting Help</h3>
+    <p>If you need help with SubTrack, have feature suggestions, or want to report a bug, please reach out to us. We typically respond within 48 hours.</p>
+
+    <h3>Frequently Asked Questions</h3>
+
+    <p><strong>How do I add a subscription?</strong><br>
+    Tap the "+" button on the main screen, enter the subscription details (name, price, billing cycle, etc.), and tap Save.</p>
+
+    <p><strong>How does iCloud sync work?</strong><br>
+    If iCloud is enabled on your device, SubTrack automatically syncs your subscriptions across all your Apple devices. Make sure you're signed in with the same Apple Account on all devices.</p>
+
+    <p><strong>What's included in Pro?</strong><br>
+    SubTrack Pro unlocks unlimited subscriptions (free version supports up to 5), CSV export, and AI-powered spending analysis. You can upgrade via a yearly subscription or a one-time lifetime purchase.</p>
+
+    <p><strong>How do I export my data?</strong><br>
+    Go to Settings > Export to CSV (Pro feature). This generates a CSV file with all your subscription data that you can share or save.</p>
+
+    <p><strong>How do I restore my purchase?</strong><br>
+    In-app purchases are tied to your Apple Account and are restored automatically. If your Pro status is not showing, try restarting the app.</p>
+
+    <p><strong>How do I delete all my data?</strong><br>
+    Go to Settings > Reset All Data. This permanently deletes all subscriptions, categories, and payment history. This action cannot be undone.</p>
+
+    <h3>Contact Us</h3>
+    <div class="contact-card">
+        <p><strong>Email:</strong> <a href="mailto:contact@matrixreligio.com">contact@matrixreligio.com</a></p>
+        <p><strong>Developer:</strong> MatrixReligio</p>
+        <p><strong>App:</strong> SubTrack - Subscription Manager</p>
+    </div>
+
 </body>
 </html>
